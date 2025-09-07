@@ -4,26 +4,26 @@ C# fork of Mero's ec2b.py
 Installing
 ----------
 
-.. code:: sh
-
+```sh
     git clone https://github.com/Hiro420/Ec2bCSharp
     cd Ec2bCSharp
     dotnet build
+```
 
 Example
 -------
 
-.. code:: csharp
-
+```csharp
     var ec2b = File.ReadAllBytes(args[0]);
     var xorpad = Ec2b.Derive(ec2b);
     var outPath = args.Length > 1 ? args[1] : "derived.bin";
     File.WriteAllBytes(outPath, xorpad);
+```
 
 Links
 -----
-- `Original Hotaru's C/C++ code <https://github.com/HotaruYS/Ec2b>`_
-- `Original Mero's ec2b.py code <https://github.com/GrownNed/ec2b.py>`_
+- [Original Hotaru's C/C++ code](https://github.com/HotaruYS/Ec2b)
+- [Original Mero's ec2b.py code](https://github.com/GrownNed/ec2b.py)
 
 ## License and Attribution
 
